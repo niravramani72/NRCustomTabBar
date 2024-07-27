@@ -15,7 +15,7 @@ public struct CustomTabBar: TabItemDetails, View {
     var foregroundColor: Color = .gray
     var font: Font = .caption
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             HStack {
                 ForEach(tabItems) { item in

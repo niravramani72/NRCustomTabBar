@@ -16,7 +16,7 @@ public struct SegmentedControlTabBar: TabItemDetails, View {
     var foregroundColor: Color = .blue
     var font: Font = .caption
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             HStack(spacing: 0) {
                 ForEach(tabItems) { item in

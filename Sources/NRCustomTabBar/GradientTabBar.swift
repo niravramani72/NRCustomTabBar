@@ -17,7 +17,7 @@ public struct GradientTabBar: TabItemDetails, View {
     var font: Font = .caption
     var gradientColors: [Color] = [.blue, .purple]
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             HStack {
                 ForEach(tabItems) { item in

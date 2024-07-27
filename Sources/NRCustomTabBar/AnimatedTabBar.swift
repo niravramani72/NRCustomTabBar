@@ -14,7 +14,7 @@ public struct AnimatedTabBar: TabItemDetails, View {
     var foregroundColor: Color = .gray
     var font: Font = .caption
     
-    var body: some View {
+    public var body: some View {
         VStack {
             Spacer()
             HStack {

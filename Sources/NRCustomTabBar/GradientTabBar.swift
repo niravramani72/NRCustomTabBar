@@ -11,11 +11,20 @@ import SwiftUI
 public struct GradientTabBar: TabItemDetails, View {
     
     @Binding var selectedTab: UUID
-    var tabItems: [TabItem]
-    var selectedForegroundColor: Color = .white
-    var foregroundColor: Color = .gray
-    var font: Font = .caption
-    var gradientColors: [Color] = [.blue, .purple]
+    public var tabItems: [TabItem]
+    public var selectedForegroundColor: Color = .white
+    public var foregroundColor: Color = .gray
+    public var font: Font = .caption
+    public var gradientColors: [Color] = [.blue, .purple]
+    
+    public init(selectedTab: Binding<UUID>, tabItems: [TabItem], selectedForegroundColor: Color, foregroundColor: Color, font: Font, gradientColors: [Color]) {
+        self._selectedTab = selectedTab
+        self.tabItems = tabItems
+        self.selectedForegroundColor = selectedForegroundColor
+        self.foregroundColor = foregroundColor
+        self.font = font
+        self.gradientColors = gradientColors
+    }
     
     public var body: some View {
         GeometryReader { geometry in

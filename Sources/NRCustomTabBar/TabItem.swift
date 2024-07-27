@@ -5,7 +5,6 @@
 //  Created by Nirav Ramani on 26/07/24.
 //
 
-import Foundation
 import SwiftUI
 
 public struct TabItem: Identifiable {
@@ -13,6 +12,12 @@ public struct TabItem: Identifiable {
     public let title: String
     public let imageName: String
     public let view: AnyView
+    
+    public init(title: String, imageName: String, view: AnyView) {
+        self.title = title
+        self.imageName = imageName
+        self.view = view
+    }
 }
 
 protocol TabItemDetails {

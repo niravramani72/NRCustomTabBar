@@ -10,10 +10,18 @@ import SwiftUI
 public struct FloatingTabBar: TabItemDetails, View {
  
     @Binding var selectedTab: UUID
-    var tabItems: [TabItem]
-    var selectedForegroundColor: Color = .blue
-    var foregroundColor: Color = .gray
-    var font: Font = .caption
+    public var tabItems: [TabItem]
+    public var selectedForegroundColor: Color = .blue
+    public var foregroundColor: Color = .gray
+    public var font: Font = .caption
+    
+    public init(selectedTab: Binding<UUID>, tabItems: [TabItem], selectedForegroundColor: Color, foregroundColor: Color, font: Font) {
+        self._selectedTab = selectedTab
+        self.tabItems = tabItems
+        self.selectedForegroundColor = selectedForegroundColor
+        self.foregroundColor = foregroundColor
+        self.font = font
+    }
     
     public var body: some View {
         VStack {

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct RoundTabBar: TabItemDetails, View {
+public struct RoundTabBar: TabItemDetails, View {
     
     @Binding var selectedTab: UUID
     var tabItems: [TabItem]

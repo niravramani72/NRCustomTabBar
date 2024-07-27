@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct TabItem: Identifiable {
-    let id = UUID()
+public struct TabItem: Identifiable {
+    public let id = UUID()
     let title: String
     let imageName: String
     let view: AnyView

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct GradientTabBar: TabItemDetails, View {
+public struct GradientTabBar: TabItemDetails, View {
     
     @Binding var selectedTab: UUID
     var tabItems: [TabItem]

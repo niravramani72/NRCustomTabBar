@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct SegmentedControlTabBar: TabItemDetails, View {
+public struct SegmentedControlTabBar: TabItemDetails, View {
     
     @Binding var selectedTab: UUID
     var tabItems: [TabItem]

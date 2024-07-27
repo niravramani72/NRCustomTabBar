@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FloatingTabBar: TabItemDetails, View {
+public struct FloatingTabBar: TabItemDetails, View {
  
     @Binding var selectedTab: UUID
     var tabItems: [TabItem]

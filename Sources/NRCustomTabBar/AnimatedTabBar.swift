@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct AnimatedTabBar: TabItemDetails, View {
+public struct AnimatedTabBar: TabItemDetails, View {
     
     @Binding var selectedTab: UUID
     var tabItems: [TabItem]
